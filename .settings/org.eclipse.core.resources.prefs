@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//griffon-app/conf=UTF-8
+encoding//griffon-app/controllers=UTF-8
+encoding//griffon-app/i18n=UTF-8
+encoding//griffon-app/lifecycle=UTF-8
+encoding//griffon-app/models=UTF-8
+encoding//griffon-app/mvcs=UTF-8
+encoding//griffon-app/resources=UTF-8
+encoding//griffon-app/services=UTF-8
+encoding//griffon-app/views=UTF-8
+encoding//src/main/java=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8
