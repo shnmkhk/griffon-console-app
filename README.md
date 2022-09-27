@@ -1,5 +1,6 @@
 Basic Griffon Swing/Java project
 --------------------------------
+[Getting Started](http://griffon-framework.org/guide/2.16.0/#_getting_started)
 
 You have just created a basic Griffon application with Swing as UI toolkit
 and Java as main language. The project has the following file structure
