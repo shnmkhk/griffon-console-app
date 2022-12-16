@@ -15,4 +15,14 @@ public class ConsoleModel extends AbstractGriffonModel {
     public void setClickCount(int clickCount) {
         firePropertyChange("clickCount", this.clickCount, this.clickCount = clickCount);
     }
+
+    private String greetMessage = "Hello";
+
+    public String getGreetMessage() {
+        return greetMessage;
+    }
+
+    public void setGreetMessage(final String revisedGreetMessage) {
+        firePropertyChange("changeGreetingMsg", this.greetMessage, this.greetMessage = revisedGreetMessage);
+    }
 }

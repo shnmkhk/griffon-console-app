@@ -23,4 +23,10 @@ public class ConsoleController extends AbstractGriffonController {
     public void click() {
         model.setClickCount(model.getClickCount() + 1);
     }
+
+    @ControllerAction
+    @Threading(Threading.Policy.INSIDE_UITHREAD_ASYNC)
+    public void greet() {
+        model.setGreetMessage("World");
+    }
 }

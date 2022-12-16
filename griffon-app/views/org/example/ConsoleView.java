@@ -71,6 +71,22 @@ public class ConsoleView extends AbstractSwingGriffonView {
         clickLabel.setName("clickLabel");
         clickLabel.setHorizontalAlignment(SwingConstants.CENTER);
         window.getContentPane().add(clickLabel);
+
+        Action action2 = toolkitActionFor(controller, "greet");
+        JButton button2 = new JButton(action2);
+        button.setName("clickButton2");
+        window.getContentPane().add(button2);
+
+        final JLabel clickLabel2 = new JLabel(String.valueOf(model.getClickCount()));
+        model.addPropertyChangeListener("changeGreetingMsg", new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent evt) {
+                clickLabel2.setText(String.valueOf(evt.getNewValue()));
+            }
+        });
+        clickLabel2.setName("clickLabel2");
+        clickLabel2.setHorizontalAlignment(SwingConstants.CENTER);
+        window.getContentPane().add(clickLabel2);
     }
 
     private Image getImage(String path) {
